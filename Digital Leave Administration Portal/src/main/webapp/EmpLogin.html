@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Login</title>
+</head>
+<body>
+	<h2>Fill Your Login Credential</h2>
+	<form action="LoginServlet" method="post">
+		<div class="form-content">
+			<p>Logging in as: <b>Employee</b></p>
+			<input type="text" name="role" value="employee" readonly>
+			
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username">
+			
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password"><br>
+		</div>
+		
+		<div class="submit-container">
+			<input type="submit" id="submit" value="Login">
+		</div>
+	</form>
+</body>
+</html>
