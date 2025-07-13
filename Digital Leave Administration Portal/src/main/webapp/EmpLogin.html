@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Employee Login</title>
+<link rel="stylesheet" type="text/css" href="css/EmpLogin.css">
 </head>
 <body>
 	<h2>Fill Your Login Credential</h2>
 	<form action="LoginServlet" method="post">
 		<div class="form-content">
-			<p>Logging in as: <b>Employee</b></p>
-			<input type="text" name="role" value="employee" readonly>
+			<input type="hidden" name="role" value="employee">
 			
 			<label for="username">Username:</label>
 			<input type="text" id="username" name="username">

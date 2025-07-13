@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Admin Login</title>
+<link rel="stylesheet" type="text/css" href="css/AdminLogin.css">
 </head>
 <body>
 	<h2>Fill Your Login Credential</h2>
 	<form action="LoginServlet" method="post">
 		<div class="form-content">
-			<p>Logging in as: <b>Admin</b></p>
-			<input type="text" name="role" value="admin" readonly>
+			<input type="hidden" name="role" value="admin">
 			
 			<label for="username">Username:</label>
 			<input type="text" id="username" name="username">

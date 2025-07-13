@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Apply for Leave</title>
+<link rel="stylesheet" type="text/css" href="css/applyLeave.css">
 </head>
 <body>
 <%

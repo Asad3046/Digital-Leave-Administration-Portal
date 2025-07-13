@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Admin Dashboard</title>
+<link rel="stylesheet" type="text/css" href="css/adminHome.css">
 </head>
 <body>
 	<h2>Welcome, Admin</h2>
