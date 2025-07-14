@@ -17,7 +17,7 @@
   Date of Joining: <input type="text" name="doj" value="<%= leave.getDateOfJoining() %>" readonly><br>
   Remaining Leaves: <input type="text" name="remainingLeaves" value="<%= leave.getRemainingLeaves() %>" readonly><br>
   No of Leaves: <input type="number" name="noOfLeaves"><br>
-  From Date: <input type="date" name="fromDate"><br>
+  From Date: <input type="date" name="fromDate" id="fromDate"><br>
   To Date: <input type="date" name="toDate"><br>
   Reason: <input type="text" name="reason"><br>
   Manager: <select name="manager">
@@ -30,5 +30,21 @@
   </select><br>
   <input type="submit" value="Submit">
 </form>
+<script>
+document.querySelector("form").addEventListener("submit", function(e) {
+  const fromDateInput = document.getElementById("fromDate");
+  const fromDate = new Date(fromDateInput.value);
+  const today = new Date();
+
+  // Reset time to midnight for accurate comparison
+  today.setHours(0, 0, 0, 0);
+
+  if (fromDate < today) {
+    alert("From Date cannot be earlier than today's date.");
+    e.preventDefault(); // Prevent form submission
+  }
+});
+</script>
+
 </body>
 </html>
